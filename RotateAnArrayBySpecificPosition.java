@@ -6,7 +6,12 @@ public class RotateAnArrayBySpecificPosition {
         int index = 3;
         int b[] = new int[arr.length];
         for (int i = 0; i < arr.length; i++){
+            if (i == index){
+                for (int j = arr.length - 1; j >= index; j--){
 
+                }
+            }
+            System.out.println(arr[i]);
         }
     }
 }
