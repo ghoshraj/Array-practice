@@ -10,23 +10,14 @@ public class RotateAnArrayBySpecificPosition {
             b[k++] = arr[i];
         }
         for(int i=arr.length-1;i>=index;i--){
-
             b[k++]=arr[i];
         }
-//
-
-        //Arrays.toString(arr);
-        //Arrays.toString(b);
-       // System.out.println(arr.toString());
-        for (int o:arr
-             ) {
+        for (int o:arr) {
             System.out.print(o+" ");
         }
         System.out.println();
-        for (int o:b
-        ) {
+        for (int o:b) {
             System.out.print(o+ " ");
         }
-
     }
 }
