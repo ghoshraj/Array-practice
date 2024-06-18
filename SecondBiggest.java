@@ -5,12 +5,14 @@ public class SecondBiggest {
         int arr[] = {1,1,5,8,9,9};
         int max = arr[0];
         int max1 = arr[0];
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 1; i < arr.length; i++){
+            if (arr[i] == max)
+                continue;
             if (arr[i] > max){
                max1 = max;
                max = arr[i];
             }
-            else if (arr[i] > max1 && arr[i] < max){
+            else if (arr[i] > max1 || max1 == max){
                 max1 = arr[i];
             }
         }
